@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoIframeResponsive from './components/VideoIframeResponsive';
+import { VideoIframeResponsive } from './components/VideoIframeResponsive';
 import { BannerMainContainer, ContentAreaContainer, WatchButton } from './styles';
 
 function getYouTubeId(youtubeURL) {
@@ -10,11 +10,11 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-export default function BannerMain({
+export const BannerMain = ({
   videoTitle,
   videoDescription,
   url,
-}) {
+}) => {
   const youTubeID = getYouTubeId(url);
   const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
 

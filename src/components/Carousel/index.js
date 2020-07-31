@@ -1,12 +1,12 @@
 import React from 'react';
 import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
-import VideoCard from './components/VideoCard';
-import Slider, { SliderItem } from './components/Slider';
+import { VideoCard } from './components/VideoCard';
+import { Slider, SliderItem } from './components/Slider';
 
-function Carousel({
+export const Carousel = ({
   ignoreFirstVideo,
   category,
-}) {
+}) => {
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;
   const categoryExtraLink = category.link_extra;
@@ -45,5 +45,3 @@ function Carousel({
     </VideoCardGroupContainer>
   );
 }
-
-export default Carousel;

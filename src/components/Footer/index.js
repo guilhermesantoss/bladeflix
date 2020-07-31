@@ -1,8 +1,7 @@
 import React from 'react';
-
 import { FooterBase } from './styles';
 
-function Footer() {
+export const Footer = () => {
   return (
     <FooterBase>
       <a href="https://www.alura.com.br/">
@@ -18,5 +17,3 @@ function Footer() {
     </FooterBase>
   );
 }
-
-export default Footer;

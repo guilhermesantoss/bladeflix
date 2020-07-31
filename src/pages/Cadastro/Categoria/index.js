@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import PageDefault from '../../../components/PageDefault';
-import FormField from '../../../components/FormField';
+import { PageDefault } from '../../../components/PageDefault';
+import { FormField } from '../../../components/FormField';
 
-function CadastroCategoria() {
+export const CadastroCategoria = () => {
   const [categorias, setCategorias] = useState([]);
 
   const valoresIniciais = {
@@ -84,5 +84,3 @@ function CadastroCategoria() {
     </PageDefault>
   );
 }
-
-export default CadastroCategoria;

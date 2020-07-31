@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 // import ButtonLink from './components/ButtonLink';
-import Button from '../Button';
+import { Button } from '../Button';
 
 import Logo from '../../assets/img/Logo.png';
 
 import './Menu.css';
 
-function Menu() {
+export const Menu = () => {
   return (
     <nav className="Menu">
       <Link to="/">
@@ -21,5 +20,3 @@ function Menu() {
     </nav>
   );
 }
-
-export default Menu;

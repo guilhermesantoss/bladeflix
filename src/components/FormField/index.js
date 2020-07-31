@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Input = styled.input``;
 
-function FormField({ label, type, name, value, onChange }) {
+export const FormField = ({ label, type, name, value, onChange }) => {
   const fieldId = `id_${name}`;
   const isTypeTextArea = type === 'textarea';
   const tag = isTypeTextArea ? 'textarea' : 'input';
@@ -25,5 +25,3 @@ function FormField({ label, type, name, value, onChange }) {
     </div>
   );
 }
-
-export default FormField;
