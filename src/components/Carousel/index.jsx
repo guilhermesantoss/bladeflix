@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
 import { Slider, SliderItem } from './components/Slider';
@@ -45,6 +46,16 @@ const Carousel = ({
       </Slider>
     </VideoCardGroupContainer>
   );
+};
+
+Carousel.defaultProps = {
+  ignoreFirstVideo: false,
+};
+
+Carousel.propTypes = {
+  ignoreFirstVideo: PropTypes.bool,
+  // eslint-disable-next-line react/forbid-prop-types
+  category: PropTypes.object.isRequired,
 };
 
 export default Carousel;
