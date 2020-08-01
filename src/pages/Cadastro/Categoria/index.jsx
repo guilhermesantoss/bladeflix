@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
@@ -13,6 +13,17 @@ const CadastroCategoria = () => {
     cor: '#000000',
   };
   const [valores, setValores] = useState(valoresIniciais);
+
+  useEffect(() => {
+    const URL = 'http://localhost:3333/categorias';
+    fetch(URL)
+      .then(async (response) => {
+        const res = await response.json();
+        setCategorias([
+          ...res,
+        ]);
+      });
+  }, []);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -71,6 +82,12 @@ const CadastroCategoria = () => {
 
         <Button>Cadastrar</Button>
       </form>
+
+      {categorias.length === 0 && (
+        <div>
+          Loading...
+        </div>
+      )}
 
       <ul>
         {
