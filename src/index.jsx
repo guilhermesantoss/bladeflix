@@ -6,5 +6,5 @@ import Routes from './routes';
 
 ReactDOM.render(
   <Routes />,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { VideoIframeResponsive } from './components/VideoIframeResponsive';
+import VideoIframeResponsive from './components/VideoIframeResponsive';
 import { BannerMainContainer, ContentAreaContainer, WatchButton } from './styles';
 
 function getYouTubeId(youtubeURL) {
@@ -10,7 +10,7 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-export const BannerMain = ({
+const BannerMain = ({
   videoTitle,
   videoDescription,
   url,
@@ -42,4 +42,6 @@ export const BannerMain = ({
       </ContentAreaContainer>
     </BannerMainContainer>
   );
-}
+};
+
+export default BannerMain;

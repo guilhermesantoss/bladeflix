@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Main = styled.main`
+const Main = styled.main`
   background-color: var(--black);
   color: var(--white);
   flex: 1;
@@ -8,3 +8,5 @@ export const Main = styled.main`
   padding-right: 5%;
   padding-left: 5%;
 `;
+
+export default Main;
