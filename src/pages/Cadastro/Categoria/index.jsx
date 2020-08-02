@@ -15,7 +15,9 @@ const CadastroCategoria = () => {
   const [valores, setValores] = useState(valoresIniciais);
 
   useEffect(() => {
-    const URL = 'http://localhost:3333/categorias';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://bladeflix.herokuapp.com/categorias';
     fetch(URL)
       .then(async (response) => {
         const res = await response.json();
