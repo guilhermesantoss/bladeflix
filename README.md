@@ -1,5 +1,12 @@
 # BladeFlix
 
+<p>
+  <img src="https://img.shields.io/github/repo-size/guilhermesantoss/bladeflix" alt="Repository Size" />
+  <img src="https://img.shields.io/github/last-commit/guilhermesantoss/bladeflix" alt="Last Commit" />
+  <img src="https://img.shields.io/github/languages/count/guilhermesantoss/bladeflix?color=red" alt="Languages Used" />
+  <img src="https://img.shields.io/github/license/guilhermesantoss/bladeflix?color=yellow" alt="License" />
+</p>
+
 >Projeto construido durante a [Imersão React da Alura](https://www.alura.com.br/imersao-react/)
 
 ## Executando o projeto
