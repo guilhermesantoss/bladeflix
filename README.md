@@ -24,11 +24,11 @@ $ yarn install
 Em seguida para executar a aplicação, use o comando:
 
 ```
-$ npm start
+$ npm run dev
 
 # OR
 
-$ yarn start
+$ yarn dev
 ```
 
 ## Licença
