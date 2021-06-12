@@ -13,22 +13,13 @@
 
 Após clonar o projeto, instale as dependências usando o seguinte comando:
 
-```
-$ npm install
-
-# OR
-
-$ yarn install
+```sh
+npm install
 ```
 
 Em seguida para executar a aplicação, use o comando:
-
-```
-$ npm run dev
-
-# OR
-
-$ yarn dev
+```sh
+npm run dev
 ```
 
 ## Licença
